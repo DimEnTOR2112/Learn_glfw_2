@@ -1,0 +1,10 @@
+^D:\PROJECT\FUKIN_GLFW_AND_GIT\BUILD\CMAKEFILES\45B8141BE9A49CB724D258CFA6F9F5B2\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/project/fukin_GLFW_and_GIT -BD:/project/fukin_GLFW_and_GIT/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/project/fukin_GLFW_and_GIT/build/learn_glfw.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
